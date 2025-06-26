@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hortifruti Frescor da Terra - Frutas e Verduras Frescas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+
+    <header class="main-header">
+      <nav class="main-nav">
+        <a href="#" class="logo">
+          <i class="fas fa-leaf"></i> SG
+        </a>
+        <div class="nav-actions">
+          <button id="theme-toggle-btn" class="icon-button" aria-label="Alternar tema">
+            <i class="fas fa-sun" aria-hidden="true"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </button>
+          <button id="cart-btn" class="icon-button cart-button" aria-label="Abrir carrinho de compras">
+            <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+            <span id="cart-count" class="cart-count">0</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="hero-section">
+        <h1>Frutas e verduras frescas, direto do campo para sua casa.</h1>
+        <p>Qualidade e sabor que fazem a diferença no seu dia a dia.</p>
+      </section>
+
+      <section id="product-grid" class="product-grid"></section>
+    </main>
+
+    <div id="cart-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="cart-modal-title">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="cart-modal-title">Sua Cesta</h2>
+          <button class="icon-button close-button" aria-label="Fechar carrinho">×</button>
+        </div>
+        <div id="cart-items-container">
+        </div>
+        <div class="cart-summary">
+          <strong>Total:</strong>
+          <span id="cart-total-price">R$ 0,00</span>
+        </div>
+        <!-- Horário de funcionamento -->
+        <div style="margin:0.5rem 0 1rem 0; color:#888; font-size:0.98rem;">
+          <i class="fas fa-clock" style="margin-right:6px;color:var(--primary-color);"></i>
+          Atendimento: Segunda a Sábado, 8h às 18h
+        </div>
+        <!-- Campos para nome e endereço -->
+        <div style="margin:1rem 0;">
+          <input id="checkout-nome" type="text" placeholder="Seu nome" required style="width:100%;margin-bottom:0.5rem;padding:0.5rem;border:1px solid var(--border-color);border-radius:4px;">
+          <input id="checkout-endereco" type="text" placeholder="Seu endereço" required style="width:100%;padding:0.5rem;border:1px solid var(--border-color);border-radius:4px;">
+        </div>
+        <button class="cta-button checkout-button">Finalizar Compra</button>
+      </div>
+    </div>
+
+    <!-- NOVO: Seção do mapa de localização -->
+    <section class="map-section" style="width:100%;max-width:1200px;margin:2rem auto;">
+      <h2 style="text-align:center;font-size:1.3rem;margin-bottom:1rem;">Nossa Localização</h2>
+      <div style="width:100%;height:350px;border-radius:8px;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,0.08);">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.504971429387!2d-34.861492026204985!3d-7.183072970494121!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7acc35bf77e04cb%3A0x84c7278e9a7752cd!2sSacol%C3%A3o%20do%20Gabriel!5e0!3m2!1spt-BR!2sbr!4v1750952379539!5m2!1spt-BR!2sbr"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa localização Hortifruti Frescor da Terra"></iframe>
+      </div>
+    </section>
+
+    <!-- NOVO: Seção de Contato -->
+    <section class="contact-section" style="max-width:1200px;margin:2rem auto;padding:2rem 1rem;display:flex;gap:2rem;flex-wrap:wrap;background:var(--surface-color);border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+      <div class="contact-info" style="flex:1 1 250px;min-width:250px;">
+        <h2 style="font-size:1.2rem;margin-bottom:1rem;">Contatos</h2>
+        <ul style="list-style:none;padding:0;margin:0;line-height:2;">
+          <li><i class="fas fa-phone" style="color:var(--primary-color);margin-right:8px;"></i> (83) 98137-4944</li>
+          <li><i class="fab fa-whatsapp" style="color:#25d366;margin-right:8px;"></i> <a href="https://wa.me/5583981374944" target="_blank" style="color:inherit;text-decoration:underline;">WhatsApp</a></li>
+          <!-- <li><i class="fas fa-envelope" style="color:var(--secondary-color);margin-right:8px;"></i> <a href="mailto:contato@frescordaterra.com" style="color:inherit;text-decoration:underline;">contato@frescordaterra.com</a></li> -->
+          <li><i class="fas fa-map-marker-alt" style="color:#e53935;margin-right:8px;"></i> R. Rosilda Gomes Fragoso de Albuquerque, 30 - Cuiá</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <p>© 2025 Hortifruti Sacolão do Gabriel. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
