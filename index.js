@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- BANCO DE DADOS (Simulado) ---
     const productsData = [
         { id: 'maca-fuji', name: 'Maçã Fuji', price: 8.99, image: 'https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a?w=500&q=80', unit: 'kg' },
-        { id: 'banana-prata', name: 'Banana Prata', price: 6.50, image: 'https://images.unsplash.com/photo-1571771894824-de09f1577a4e?w=500&q=80', unit: 'kg' },
+        { id: 'banana-prata', name: 'Banana Prata', price: 6.50, image: 'https://images.unsplash.com/photo-1523667864248-fc55f5bad7e2?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D', unit: 'kg' },
         { id: 'alface-crespa', name: 'Alface Crespa', price: 3.80, image: 'https://images.unsplash.com/photo-1557844352-761f2565b576?w=500&q=80', unit: 'un' },
         { id: 'tomate-italiano', name: 'Tomate Italiano', price: 9.90, image: 'https://images.unsplash.com/photo-1582284540020-8acbe03f4924?w=500&q=80', unit: 'kg' },
         { id: 'cenoura', name: 'Cenoura', price: 4.50, image: 'https://images.unsplash.com/photo-1590431306482-f700ee050c59?w=500&q=80', unit: 'kg' },
-        { id: 'brocolis', name: 'Brócolis', price: 7.00, image: 'https://images.unsplash.com/photo-1587351177733-a06945a5de0a?w=500&q=80', unit: 'un' },
+        { id: 'brocolis', name: 'Brócolis', price: 7.00, image: 'https://media.istockphoto.com/id/1364035705/pt/foto/fresh-broccoli-on-white-background.jpg?s=1024x1024&w=is&k=20&c=yaDc0PpPFlzOslHBbUkMg9TS1LhpcVsVxWpZ0w6XPd8=', unit: 'un' },
         { id: 'laranja-pera', name: 'Laranja Pera', price: 5.20, image: 'https://images.unsplash.com/photo-1611080626919-7cf5a9dbab5b?w=500&q=80', unit: 'kg' },
-        { id: 'batata-inglesa', name: 'Batata Inglesa', price: 5.80, image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba657?w=500&q=80', unit: 'kg' },
+        { id: 'batata-inglesa', name: 'Batata Inglesa', price: 5.80, image: 'https://media.istockphoto.com/id/181417950/pt/foto/batata.jpg?s=1024x1024&w=is&k=20&c=Q40tnob2U071buwrI6dXYMDevsxWckmEn-_7PPOXpIM=', unit: 'kg' },
     ];
 
     // --- SELEÇÃO DE ELEMENTOS ---
